@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBKbI0XvV97egzaki-6DXiwbOjog4wYF8U",
+      authDomain: "fir-d0a37.firebaseapp.com",
+      projectId: "fir-d0a37",
+      storageBucket: "fir-d0a37.appspot.com",
+      messagingSenderId: "756612857053",
+      appId: "1:756612857053:web:001a2026feea2717cf2f34",
+      measurementId: "G-N83MXJD0VK"
+    };
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="Firebase.js" defer></script>
+</head>
+<body style="background-color: rgba(61, 235, 197, 0.429);font-size: medium;text-align:center;">
+
+    <h1>Firebase</h1>
+
+    <section id="whenSignedOut">
+      <button id="signInBtn">Sign in</button>
+    </section>
+    <section id="whenSignedIn" hidden="true">
+      <div id="userDetails"></div>
+      <button id="signOutBtn">Sign out</button>
+    </section>
+</body>
+</html>
